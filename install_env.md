@@ -25,3 +25,8 @@
 ### PX4
 
 1. Install [PX4](https://docs.px4.io/master/en/dev_setup/building_px4.html)
+
+### etc.
+```bash
+sudo apt install xmlstarlet
+```
