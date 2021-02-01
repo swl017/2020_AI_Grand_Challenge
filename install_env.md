@@ -2,9 +2,9 @@
 
 ## Install
 ### Dependencies
-    ```bash
-    sudo apt install xmlstarlet
-    ```
+```bash
+sudo apt install xmlstarlet
+```
 ### Cartographer
 
 1. Make `carto` directory.
