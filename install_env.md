@@ -39,7 +39,7 @@ sudo apt install xmlstarlet
     - Binary installation recommanded.
 3. Install [PX4](https://docs.px4.io/master/en/dev_setup/building_px4.html)
     - Build using `make px4_sitl gazebo`
-4. Add the following lines to `~/.bashrc'.
+4. Add the following lines to `~/.bashrc`.
     ```bash
     source /home/sw/src/Firmware/Tools/setup_gazebo.bash /home/sw/src/Firmware /home/sw/src/Firmware/build/px4_sitl_default
     export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/sw/src/Firmware
