@@ -70,4 +70,5 @@ rosrun mavros_control mavros_control_node
 Apply arming/takeoff and autonomous mode using `t` and `g` in your keyboard.
 
 ### Launch Example
+Refer to the terminal window titles for each launch commands.
 ![aigc_sim_example](https://github.com/swl017/2020_AI_Grand_Challenge/blob/swl017-install-manual/aigc_sim_example.png)
