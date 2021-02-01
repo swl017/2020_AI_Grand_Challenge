@@ -8,7 +8,7 @@
     cd && mkdir carto_ws && cd carto_ws
     ```
 
-2. Install [`cartographer ros`](https://google-cartographer-ros.readthedocs.io/en/latest/)
+2. Install [`cartographer ros`](https://google-cartographer-ros.readthedocs.io/en/latest/compilation.html#building-installation)
     - (Dependency) [`ceres`](http://ceres-solver.org/installation.html)
     ```bash
     git clone https://ceres-solver.googlesource.com/ceres-solver
