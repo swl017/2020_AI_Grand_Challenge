@@ -63,8 +63,8 @@ roslaunch mission_planner mission_planner_2.launch
 roslaunch astar astar.launch
 ```
 
-Finally, run the following node for takeoff.
+Finally, run the following node to fly.
 ```bash
 rosrun mavros_control mavros_control_node
 ```
-Apply arming and autonomous mode using `t` and `g` in your keyboard.
+Apply arming/takeoff and autonomous mode using `t` and `g` in your keyboard.
