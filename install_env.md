@@ -19,12 +19,13 @@
     ```
     - (Dependency) Lua
     ```bash
-    sudo apt-get install liblua-5.2
+    sudo apt-get install liblua5.2-0
     ```
 
 ### PX4
-
+1 https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html#ubuntu
 1. Install [PX4](https://docs.px4.io/master/en/dev_setup/building_px4.html)
+    - `make px4_sitl gazebo`
 
 ### etc.
 ```bash
