@@ -1,6 +1,6 @@
 # USRG Drone in Gazebo
 
-## Install
+## Installation
 ### Dependencies
 ```bash
 sudo apt install xmlstarlet
@@ -37,6 +37,10 @@ sudo apt install xmlstarlet
 1. Install [Qgroundcontrol](https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html#ubuntu)
 2. Install [mavros](https://docs.px4.io/master/en/ros/mavros_installation.html)
     - Binary installation recommanded.
+    - (Dependency) If errors regarding Geographic library occurs,
+    ```bash
+    sudo geographiclib-get-geoids egm96-5
+    ```
 3. Install [PX4](https://docs.px4.io/master/en/dev_setup/building_px4.html)
     - Build using `make px4_sitl gazebo`
 4. Add the following lines to `~/.bashrc`.
@@ -45,3 +49,22 @@ sudo apt install xmlstarlet
     export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/sw/src/Firmware
     export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/sw/src/Firmware/Tools/sitl_gazebo
     ```
+    
+## Executing Simulation
+Run each command in seperate terminals.
+```bash
+roslaunch simulation_drone AIGC_2020.launch
+roslaunch mavros_control mavros_control.launch
+roslaunch cartographer_ros gazebo.launch
+roslaunch tf_listener tf_listener.launch
+roslaunch offboard_drone offboard.launch
+roslaunch distance_map distance_map.launch
+roslaunch mission_planner mission_planner_2.launch
+roslaunch astar astar.launch
+```
+
+Finally, run the following node for takeoff.
+```bash
+rosrun mavros_control mavros_control_node
+```
+Apply arming and autonomous mode using `t` and `g` in your keyboard.
