@@ -1,6 +1,10 @@
 # USRG Drone in Gazebo
 
 ## Install
+### Dependencies
+    ```bash
+    sudo apt install xmlstarlet
+    ```
 ### Cartographer
 
 1. Make `carto` directory.
@@ -23,11 +27,8 @@
     ```
 
 ### PX4
-1 https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html#ubuntu
-1. Install [PX4](https://docs.px4.io/master/en/dev_setup/building_px4.html)
-    - `make px4_sitl gazebo`
-
-### etc.
-```bash
-sudo apt install xmlstarlet
-```
+1. Install [Qgroundcontrol](https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html#ubuntu)
+2. Install [mavros](https://docs.px4.io/master/en/ros/mavros_installation.html)
+    - Binary installation recommanded.
+3. Install [PX4](https://docs.px4.io/master/en/dev_setup/building_px4.html)
+    - Build using `make px4_sitl gazebo`
